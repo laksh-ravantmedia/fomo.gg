@@ -9,9 +9,10 @@ import { fadeInUp, staggerContainer } from '@/lib/utils/animations';
 
 export function HowItWorks() {
   return (
-    <section className={styles.section} id="how-it-works">
+    <section className={styles.section} id="how-it-works" aria-labelledby="how-it-works-heading">
       <div className="container">
         <motion.h2 
+          id="how-it-works-heading"
           className={styles.heading}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -10,7 +10,7 @@ interface TickerChipProps {
   index: number;
 }
 
-export function TickerChip({ asset, index }: TickerChipProps) {
+export const TickerChip = React.memo(function TickerChip({ asset, index }: TickerChipProps) {
   return (
     <motion.div
       className={styles.chip}
@@ -46,4 +46,4 @@ export function TickerChip({ asset, index }: TickerChipProps) {
       </div>
     </motion.div>
   );
-}
+});

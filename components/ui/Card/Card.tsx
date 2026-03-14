@@ -8,7 +8,7 @@ interface CardProps {
   className?: string;
 }
 
-export function Card({ variant = 'default', glowColor, children, className = '' }: CardProps) {
+export const Card = React.memo(function Card({ variant = 'default', glowColor, children, className = '' }: CardProps) {
   return (
     <div 
       className={`${styles.card} ${styles[variant]} ${className}`}
@@ -18,4 +18,4 @@ export function Card({ variant = 'default', glowColor, children, className = '' 
       {children}
     </div>
   );
-}
+});

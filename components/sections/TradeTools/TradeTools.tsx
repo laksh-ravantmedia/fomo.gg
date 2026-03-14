@@ -55,8 +55,8 @@ export function TradeTools() {
               </div>
               
               <div className={styles.tokenActions}>
-                <button className={styles.buyButton}>Buy</button>
-                <button className={styles.sellButton}>Sell</button>
+                <button className={styles.buyButton} aria-label={`Buy ${token.name}`}>Buy</button>
+                <button className={styles.sellButton} aria-label={`Sell ${token.name}`}>Sell</button>
               </div>
             </motion.div>
           ))}
