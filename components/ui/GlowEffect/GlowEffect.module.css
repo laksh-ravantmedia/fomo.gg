@@ -1,0 +1,34 @@
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.purple {
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.6) 0%, transparent 70%);
+}
+
+.blue {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.6) 0%, transparent 70%);
+}
+
+.green {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.6) 0%, transparent 70%);
+}
+
+.sm {
+  width: 300px;
+  height: 300px;
+}
+
+.md {
+  width: 600px;
+  height: 400px;
+}
+
+.lg {
+  width: 892px;
+  height: 457px;
+}

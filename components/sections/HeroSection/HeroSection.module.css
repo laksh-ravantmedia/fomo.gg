@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 860px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 205px;
+  background: linear-gradient(to bottom, transparent 0%, var(--color-bg-primary) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    height: 700px;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero {
+    height: 600px;
+    margin-top: 80px;
+  }
+}

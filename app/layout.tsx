@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "fomo.gg - Never Miss Out",
-  description: "Stay ahead of the game with fomo.gg",
+  title: "FOMO.gg - Trade Meme Coins. Launch Your Own.",
+  description: "Buy trending coins or launch your own in seconds. All directly from your phone.",
+  openGraph: {
+    title: "FOMO.gg - Trade Meme Coins. Launch Your Own.",
+    description: "Buy trending coins or launch your own in seconds. All directly from your phone.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FOMO.gg - Trade Meme Coins. Launch Your Own.",
+    description: "Buy trending coins or launch your own in seconds. All directly from your phone.",
+  }
 };
 
 export default function RootLayout({
@@ -16,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={GeistSans.className}>{children}</body>
     </html>
   );
 }

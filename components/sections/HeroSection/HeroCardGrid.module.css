@@ -1,0 +1,50 @@
+.grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 32px;
+  height: 730px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.cardWrapper {
+  flex-shrink: 0;
+  will-change: transform;
+}
+
+.card {
+  width: 204px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.flip {
+  transform: scaleY(-1) rotate(180deg);
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    gap: 20px;
+  }
+  
+  .card {
+    width: 160px;
+  }
+}
+
+@media (max-width: 639px) {
+  .grid {
+    gap: 12px;
+  }
+  
+  .card {
+    width: 120px;
+  }
+  
+  .cardWrapper:nth-child(1),
+  .cardWrapper:nth-child(7) {
+    display: none;
+  }
+}
