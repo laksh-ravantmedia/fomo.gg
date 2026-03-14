@@ -5,7 +5,10 @@ import { AssetTicker } from '@/components/sections/AssetTicker/AssetTicker';
 import { HowItWorks } from '@/components/sections/HowItWorks/HowItWorks';
 import { CreateCoin } from '@/components/sections/CreateCoin/CreateCoin';
 import { TradingCoins } from '@/components/sections/TradingCoins/TradingCoins';
+import { Momentum } from '@/components/sections/Momentum/Momentum';
+import { TradeTools } from '@/components/sections/TradeTools/TradeTools';
 import { FastTrading } from '@/components/sections/FastTrading/FastTrading';
+import { Discovery } from '@/components/sections/Discovery/Discovery';
 import { InstallCTA } from '@/components/sections/InstallCTA/InstallCTA';
 
 export default function Home() {
@@ -18,7 +21,10 @@ export default function Home() {
         <HowItWorks />
         <CreateCoin />
         <TradingCoins />
+        <Momentum />
+        <TradeTools />
         <FastTrading />
+        <Discovery />
         <InstallCTA />
       </main>
       <Footer />

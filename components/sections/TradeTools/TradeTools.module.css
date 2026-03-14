@@ -1,0 +1,173 @@
+.section {
+  padding: var(--space-16) 0;
+}
+
+.heading {
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 var(--space-8) 0;
+  letter-spacing: -1px;
+  background: var(--gradient-hero);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tokenCard {
+  background: rgba(20, 20, 25, 0.8);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  backdrop-filter: blur(10px);
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.tokenCard:hover {
+  border-color: var(--color-accent-purple);
+}
+
+.tokenHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.tokenAvatar {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.tokenInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tokenName {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.tokenSymbol {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+}
+
+.tokenStats {
+  background: rgba(20, 20, 25, 0.6);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-1);
+}
+
+.statValue {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.statChange {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.statChange[data-positive="true"] {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-accent-green);
+}
+
+.statLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+
+.tokenActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+.buyButton,
+.sellButton {
+  padding: var(--space-2);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.buyButton {
+  background: linear-gradient(135deg, var(--color-accent-green), #059669);
+  color: white;
+}
+
+.buyButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.sellButton {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.sellButton:hover {
+  background: rgba(239, 68, 68, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1023px) {
+  .heading {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+@media (max-width: 639px) {
+  .section {
+    padding: var(--space-10) 0;
+  }
+  
+  .heading {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
