@@ -1,6 +1,6 @@
 .content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 784px;
   text-align: center;
   padding: 0 var(--space-2);
@@ -9,17 +9,17 @@
 .textStack {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  margin-bottom: var(--space-6);
+  gap: 24px;
+  margin-bottom: 48px;
 }
 
 .title {
   font-family: var(--font-primary);
-  font-size: var(--font-size-6xl);
+  font-size: 80px;
   font-weight: 500;
-  line-height: var(--line-height-tight);
+  line-height: 96px;
   letter-spacing: -0.8px;
-  background: var(--gradient-hero);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 10.065%, #FFFFFF 82.468%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -28,17 +28,17 @@
 
 .subtitle {
   font-family: var(--font-primary);
-  font-size: var(--font-size-2xl);
+  font-size: 24px;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 30px;
   letter-spacing: -0.15px;
-  color: var(--color-text-primary);
+  color: #f0f0f7;
   margin: 0;
 }
 
 .actions {
   display: flex;
-  gap: var(--space-3);
+  gap: 24px;
   justify-content: center;
   align-items: center;
 }
