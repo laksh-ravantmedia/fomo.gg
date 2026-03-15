@@ -16,9 +16,9 @@
 }
 
 .card {
-  width: 204px;
   object-fit: cover;
   border-radius: var(--radius-lg);
+  height: auto;
 }
 
 .flip {
@@ -30,8 +30,8 @@
     gap: 20px;
   }
   
-  .card {
-    width: 160px;
+  .cardWrapper {
+    transform: scale(0.8);
   }
 }
 
@@ -40,8 +40,8 @@
     gap: 12px;
   }
   
-  .card {
-    width: 120px;
+  .cardWrapper {
+    transform: scale(0.6);
   }
   
   .cardWrapper:nth-child(1),
