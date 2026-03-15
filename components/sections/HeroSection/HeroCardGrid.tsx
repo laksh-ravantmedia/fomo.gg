@@ -7,13 +7,13 @@ import styles from './HeroCardGrid.module.css';
 import { FIGMA_ASSETS } from '@/lib/constants/assets';
 
 const cards = [
-  { image: FIGMA_ASSETS.hero.card01, width: 204, height: 646, delay: 0 },
-  { image: FIGMA_ASSETS.hero.card02, width: 204, height: 691, delay: 0.1 },
-  { image: FIGMA_ASSETS.hero.card03, width: 204, height: 632, delay: 0.2 },
-  { image: FIGMA_ASSETS.hero.card04, width: 220, height: 587, delay: 0.3 },
-  { image: FIGMA_ASSETS.hero.card05, width: 204, height: 632, delay: 0.4, flip: true },
-  { image: FIGMA_ASSETS.hero.card06, width: 204, height: 691, delay: 0.5 },
-  { image: FIGMA_ASSETS.hero.card07, width: 204, height: 646, delay: 0.6, flip: true }
+  { image: '/images/hero-grid/HeroCardImage01.png', width: 204, height: 646, delay: 0, offsetTop: 80 },
+  { image: '/images/hero-grid/HeroCardImage02.png', width: 204, height: 691, delay: 0.1, offsetTop: 40 },
+  { image: '/images/hero-grid/HeroCardImage03.png', width: 204, height: 632, delay: 0.2, offsetTop: 0 },
+  { image: '/images/hero-grid/HeroCardImage04.png', width: 220, height: 587, delay: 0.3, offsetTop: 0 },
+  { image: '/images/hero-grid/HeroCardImage05.png', width: 204, height: 632, delay: 0.4, offsetTop: 0, flip: true },
+  { image: '/images/hero-grid/HeroCardImage06.png', width: 204, height: 691, delay: 0.5, offsetTop: 40 },
+  { image: '/images/hero-grid/HeroCardImage07.png', width: 204, height: 646, delay: 0.6, offsetTop: 80, flip: true }
 ];
 
 export function HeroCardGrid() {
@@ -23,6 +23,7 @@ export function HeroCardGrid() {
         <motion.div
           key={index}
           className={styles.cardWrapper}
+          style={{ paddingTop: `${card.offsetTop}px` }}
           initial={{ opacity: 0, y: 50 }}
           animate={{ 
             opacity: 0.2, 
