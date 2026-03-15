@@ -13,7 +13,6 @@ export function HeroSection() {
       </div>
       <div className={styles.gradientOverlay} />
       <HeroContent />
-      <div className={styles.overlay} />
     </section>
   );
 }
