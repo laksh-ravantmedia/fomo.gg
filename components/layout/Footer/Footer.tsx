@@ -1,13 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export function Footer() {
   return (
     <footer className={styles.footer} role="contentinfo">
       <div className={styles.container}>
-        <div className={styles.logo} role="img" aria-label="FOMO.gg logo">
-          <span className={styles.logoText}>FOMO</span>
-          <span className={styles.logoAccent}>.gg</span>
+        <div className={styles.logo}>
+          <Image 
+            src="/images/icons/BrandLogoMain.svg"
+            alt="FOMO.gg"
+            width={142}
+            height={50}
+          />
         </div>
         
         <nav className={styles.links} aria-label="Footer navigation">

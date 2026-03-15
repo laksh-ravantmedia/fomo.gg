@@ -1,13 +1,19 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './Navigation.module.css';
 
 export function Navigation() {
   return (
     <nav className={styles.nav} aria-label="Main navigation">
       <div className={styles.container}>
-        <div className={styles.logo} role="img" aria-label="FOMO.gg logo">
-          <span className={styles.logoText}>FOMO</span>
-          <span className={styles.logoAccent}>.gg</span>
+        <div className={styles.logo}>
+          <Image 
+            src="/images/icons/BrandLogoMain.svg"
+            alt="FOMO.gg"
+            width={142}
+            height={50}
+            priority
+          />
         </div>
       </div>
     </nav>

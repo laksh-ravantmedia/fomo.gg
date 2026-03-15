@@ -21,20 +21,13 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 2px;
-  font-size: var(--font-size-xl);
-  font-weight: 700;
+  height: 40px;
 }
 
-.logoText {
-  color: var(--color-text-primary);
-}
-
-.logoAccent {
-  background: linear-gradient(135deg, var(--color-accent-purple) 0%, var(--color-accent-blue) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo img {
+  height: auto;
+  width: auto;
+  max-height: 40px;
 }
 
 .links {
