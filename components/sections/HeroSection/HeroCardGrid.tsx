@@ -26,7 +26,7 @@ export function HeroCardGrid() {
           style={{ paddingTop: `${card.offsetTop}px` }}
           initial={{ opacity: 0, y: 50 }}
           animate={{ 
-            opacity: 0.2, 
+            opacity: 1, 
             y: [0, -20, 0],
           }}
           transition={{
