@@ -25,13 +25,12 @@
   z-index: 2;
   pointer-events: none;
   background: radial-gradient(
-    ellipse at center,
-    rgba(88, 80, 236, 0.35) 0%,
-    rgba(139, 92, 246, 0.25) 30%,
-    rgba(59, 130, 246, 0.15) 50%,
+    circle at center,
+    rgba(53, 53, 237, 0.6) 0%,
+    rgba(53, 53, 237, 0.3) 40%,
     transparent 70%
   );
-  filter: blur(40px);
+  filter: blur(80px);
 }
 
 
