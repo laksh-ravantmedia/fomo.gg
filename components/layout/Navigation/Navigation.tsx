@@ -16,6 +16,7 @@ export function Navigation() {
           />
         </div>
       </div>
+      <div className={styles.gradientFade} />
     </nav>
   );
 }
