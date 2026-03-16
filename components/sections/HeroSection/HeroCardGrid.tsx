@@ -11,7 +11,7 @@ const cards = [
   { image: '/images/hero-grid/HeroCardImage03.png', width: 204, height: 632, delay: 0.2, offsetTop: 0 },
   { image: '/images/hero-grid/HeroCardImage04.png', width: 220, height: 587, delay: 0.3, offsetTop: 0 },
   { image: '/images/hero-grid/HeroCardImage05.png', width: 204, height: 632, delay: 0.4, offsetTop: 0, flip: true },
-  { image: '/images/hero-grid/HeroCardImage06.png', width: 204, height: 691, delay: 0.5, offsetTop: 40 },
+  { image: '/images/hero-grid/HeroCardImage06.png', width: 204, height: 691, delay: 0.5, offsetTop: 40, flip: true },
   { image: '/images/hero-grid/HeroCardImage07.png', width: 106, height: 646, delay: 0.6, offsetTop: 80, flip: true }
 ];
 
