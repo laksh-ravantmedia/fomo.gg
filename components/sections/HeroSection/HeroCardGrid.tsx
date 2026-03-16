@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import styles from './HeroCardGrid.module.css';
 import { FIGMA_ASSETS } from '@/lib/constants/assets';
 
@@ -20,23 +19,10 @@ export function HeroCardGrid() {
   return (
     <div className={styles.grid}>
       {cards.map((card, index) => (
-        <motion.div
+        <div
           key={index}
           className={styles.cardWrapper}
           style={{ paddingTop: `${card.offsetTop}px` }}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ 
-            opacity: 1, 
-            y: [0, -20, 0],
-          }}
-          transition={{
-            opacity: { duration: 1, delay: card.delay },
-            y: {
-              duration: 4 + index * 0.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }
-          }}
         >
           <Image 
             src={card.image}
@@ -49,7 +35,7 @@ export function HeroCardGrid() {
             quality={85}
             sizes={`(max-width: 640px) ${Math.round(card.width * 0.6)}px, (max-width: 1024px) ${Math.round(card.width * 0.8)}px, ${card.width}px`}
           />
-        </motion.div>
+        </div>
       ))}
     </div>
   );
